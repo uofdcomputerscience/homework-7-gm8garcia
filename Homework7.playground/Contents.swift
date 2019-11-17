@@ -18,7 +18,7 @@ import Foundation
 struct Book: Codable {
     var title: String
     var author: String
-    var pubDate: String
+    var pubYear: String
     var image: String
 }
 // MARK: - STEP TWO
@@ -27,17 +27,17 @@ struct Book: Codable {
 // have an amusing dataset to work with, each student is requested to
 // create five different books for this database.
 var Books: [Book] = []
-let PercyJackson = Book(title: "Percy Jackson and the Lightning Thief", author: "Rick Riordan", pubDate: "June 28, 2005", image: ".")
-let Wonder = Book(title: "Wonder", author: "R.J. Palacio", pubDate: "Febuary 14, 2012", image: ".")
-let TheSelection = Book(title: "TheSelection", author: "Kiera Cass", pubDate: "April 14, 2012", image: ".")
-let ToAllTheBoys = Book(title: "To All the Boys I've Loved Before", author: "Jenny Han", pubDate: "April 15, 2014", image: ".")
-let TheGiver = Book(title: "The Giver", author: "Lowis Lowry", pubDate: "1993", image: "." )
+let PercyJackson = Book(title: "Percy Jackson and the Lightning Thief", author: "Rick Riordan", pubYear: "2005", image: "https://i0.wp.com/books.disney.com/content/uploads/2013/09/9780786856299.jpg")
+let Wonder = Book(title: "Wonder", author: "R.J. Palacio", pubYear: "2012", image: "https://www.thoughtco.com/thmb/yTlAzeahumU1zWN9ZDj76KRQQOM=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Wonder-572c22db3df78c038e82ba79.jpg")
+let theSelection = Book(title: "The Selection", author: "Kiera Cass", pubYear: "2012", image: "https://images-na.ssl-images-amazon.com/images/I/61UAcfOo4LL._SX331_BO1,204,203,200_.jpg")
+let theBookThief = Book(title: "The Book Thief", author: "Marcus Zusak", pubYear: "2005", image: "https://upload.wikimedia.org/wikipedia/en/8/8f/The_Book_Thief_by_Markus_Zusak_book_cover.jpg")
+let theGiver = Book(title: "The Giver", author: "Lowis Lowry", pubYear: "1993", image: "https://images-na.ssl-images-amazon.com/images/I/51R8AA8QEVL._SX322_BO1,204,203,200_.jpg" )
 
 Books.append(PercyJackson)
 Books.append(Wonder)
-Books.append(TheSelection)
-Books.append(ToAllTheBoys)
-Books.append(TheGiver)
+Books.append(theSelection)
+Books.append(theBookThief)
+Books.append(theGiver)
 // MARK: - STEP THREE"
 // Now we need to publish this data to the server.
 // Create a URL to connect to the server. Its address is:
