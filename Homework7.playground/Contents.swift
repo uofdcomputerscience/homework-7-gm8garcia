@@ -18,7 +18,7 @@ import Foundation
 struct Book: Codable {
     var title: String
     var author: String
-    var pubYear: String
+    var pubDate: String
     var image: String
 }
 // MARK: - STEP TWO
@@ -27,11 +27,11 @@ struct Book: Codable {
 // have an amusing dataset to work with, each student is requested to
 // create five different books for this database.
 var Books: [Book] = []
-let PercyJackson = Book(title: "Percy Jackson and the Lightning Thief", author: "Rick Riordan", pubYear: "2005", image: ".")
-let Wonder = Book(title: "Wonder", author: "R.J. Palacio", pubYear: "2012", image: ".")
-let TheSelection = Book(title: "TheSelection", author: "Kiera Cass", pubYear: "2012", image: ".")
-let ToAllTheBoys = Book(title: "To All the Boys I've Loved Before", author: "Jenny Han", pubYear: "2014", image: ".")
-let TheGiver = Book(title: "The Giver", author: "Lowis Lowry", pubYear: "1993", image: "." )
+let PercyJackson = Book(title: "Percy Jackson and the Lightning Thief", author: "Rick Riordan", pubDate: "June 28, 2005", image: ".")
+let Wonder = Book(title: "Wonder", author: "R.J. Palacio", pubDate: "Febuary 14, 2012", image: ".")
+let TheSelection = Book(title: "TheSelection", author: "Kiera Cass", pubDate: "April 14, 2012", image: ".")
+let ToAllTheBoys = Book(title: "To All the Boys I've Loved Before", author: "Jenny Han", pubDate: "April 15, 2014", image: ".")
+let TheGiver = Book(title: "The Giver", author: "Lowis Lowry", pubDate: "1993", image: "." )
 
 Books.append(PercyJackson)
 Books.append(Wonder)
